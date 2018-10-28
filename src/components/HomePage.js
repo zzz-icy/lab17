@@ -1,6 +1,6 @@
 import React from 'react';
 import labPeople from '../images/labPeople.jpg';
-// import AppRouter from '../AppRouter';
+import NewsCard from './NewsCard';
 
 const HomePage = () => (
     <div className="page-header">
@@ -20,6 +20,8 @@ const HomePage = () => (
                     </div>
                     <div className="dispaly-group-column">
                         <p className="paragraph-title">What's happening...</p>
+                        <NewsCard />
+                        <NewsCard />
                     </div>
                 </div>
             </div>
