@@ -26,16 +26,39 @@ function SimpleExpansionPanel(props) {
                     <Typography className={classes.heading}>Contact Us</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <Typography variant='h4'>
-                        Advanced Center for Electronics<br />
-                        Department of Physics<br />
-                        Dedman College of Humanities and Sciences<br />
-                        Southern Methodist University<br />
-                        3215 Daniel Ave.<br />
-                        Dallas, Texas 75275-0175<br />
-                        (214) 768-1472 Phone<br />
-                        (214) 768-1472 Fax
-                    </Typography>
+                    <div className="panel-details-group">
+                        <p className=''>
+                            Advanced Center for Electronics
+                    </p>
+
+                        <p className=''>
+                            Department of Physics
+                    </p>
+
+                        <p className=''>
+                            Dedman College of Humanities and Sciences
+                    </p>
+
+                        <p className=''>
+                            Southern Methodist University
+                    </p>
+
+                        <p className=''>
+                            3215 Daniel Ave.
+                    </p>
+
+                        <p className=''>
+                            Dallas, Texas 75275-0175
+                    </p>
+
+                        <p className=''>
+                            (214) 768-1472 Phone
+                    </p>
+
+                        <p className=''>
+                            (214) 768-1472 Fax
+                    </p>
+                    </div>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
         </div>
