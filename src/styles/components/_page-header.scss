@@ -49,4 +49,14 @@ span {  // no need for the leading dot .for this
     margin:$s-size $m-size;
 }
 
+.contentpaper-newsitem{
+    padding: 0 $s-size;
+    :hover{
+        color:red;
+    }
+}
+
+.paper {
+    margin-top:10;
+}
 

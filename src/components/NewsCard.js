@@ -12,7 +12,7 @@ const styles = {
     card: {
         width: "80%",
         marginTop: 16,
-        marginBottom: 16,
+        // marginBottom: 16,
         marginRight: 'auto',
         marginLeft: 'auto',
     },

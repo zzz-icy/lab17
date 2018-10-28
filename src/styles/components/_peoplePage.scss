@@ -1,0 +1,15 @@
+.peoplePage-img {
+    height:100px;
+    width:auto;
+    // display:block;
+}
+
+.peoplePage-info-column{
+    width: 100%;
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.peoplePage-info-item{
+    width:15%
+}

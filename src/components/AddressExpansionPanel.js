@@ -17,7 +17,7 @@ const styles = () => ({
     },
 });
 
-function SimpleExpansionPanel(props) {
+function AddressExpansionPanel(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
@@ -66,4 +66,4 @@ function SimpleExpansionPanel(props) {
 }
 
 
-export default withStyles(styles)(SimpleExpansionPanel);
+export default withStyles(styles)(AddressExpansionPanel);

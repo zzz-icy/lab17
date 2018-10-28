@@ -5,11 +5,9 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = () => ({
     root: {
         marginTop: 16,
-        marginBottom: 10,
         width: "80%",
         marginRight: 'auto',
         marginLeft: 'auto'
-
     },
 });
 
