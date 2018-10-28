@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 // https://reacttraining.com/react-router/web/api/NavLink
@@ -15,46 +15,43 @@ const Header = () => (
     </div>
     <div className="header__content">
       <div className="header__subtitle">
-        <NavLink
-          exact to="/"
-          activeClassName="is-active"
+        <Link
+          exact="true"
+          to="/"
           className="header__link"
         >
           Home
-                </NavLink>
+                </Link>
       </div>
 
       <div className="header__subtitle">
-        <NavLink
+        <Link
           to="/research"
-          activeClassName="is-active"
           className="header__link"
 
         >
           Research
-        </NavLink>
+        </Link>
       </div>
 
       <div className="header__subtitle">
-        <NavLink
+        <Link
           to="/facilities"
-          activeClassName="is-active"
           className="header__link"
 
         >
           Facilities
-        </NavLink>
+        </Link>
       </div>
 
       <div className="header__subtitle">
-        <NavLink
+        <Link
           to="/people"
-          activeClassName="is-active"
           className="header__link"
 
         >
           People
-        </NavLink>
+        </Link>
       </div>
     </div>
   </header>

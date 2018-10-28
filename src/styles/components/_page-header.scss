@@ -1,0 +1,48 @@
+.page-header {
+background:$off-white;
+padding: $l-size 0;
+margin-bottom:$l-size;
+}
+.page-header__actions {
+    margin-top:$m-size;
+
+}
+.page-header__title {
+margin:0;
+font-weight:300;
+span {  // no need for the leading dot .for this 
+    font-weight:bold; // 700 shortcut
+
+}
+}
+
+.page-header__img{
+    display: block;
+    margin: 0 $m-size;
+    width:100%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.paragraph {
+    text-align: justify;
+    line-height: 2;
+}
+.paragraph-title{
+    font-weight:bold;
+    align-self: center;
+}
+
+.dispaly-group-row{
+    display:flex;
+    flex-direction: row;
+}
+
+.dispaly-group-column{
+    display:flex;
+    flex-direction: column;
+    width:45%;
+    margin:$s-size $m-size;
+}
+
+

@@ -1,26 +1,33 @@
 .header {
     background:$dark-blue;
+    font-family: 'Montserrat';
+
 }
 
 .header__content{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    letter-spacing: 0.8px;
     padding: $s-size 0;
 }
 
 .header__title {
     color:white;
     text-decoration: none;
+
     h1{  // target all the h1 element under title, dot is for classname
         margin:0;
+        letter-spacing: 1.2px;
     }
 }
 
 .header__link {
     color:white;
     text-decoration: none;
-
+    // :visited{
+    //     color: red;
+    // }
 }
 
 .header__subtitle{
@@ -28,4 +35,7 @@
         background: $dark-blue;
         opacity:0.5;
     }
+}
+.paragraph-title{
+    font-weight:bold;
 }

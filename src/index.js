@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/styles.scss';
+import './index.css';
 import AppRouter from './routes/AppRouter';
 // import Header from './components/Header';
 
