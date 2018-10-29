@@ -1,15 +1,30 @@
 .peoplePage-img {
     height:100px;
     width:auto;
+    max-width: 90px;
     // display:block;
 }
 
 .peoplePage-info-column{
     width: 100%;
-display:flex;
-flex-direction: row;
-justify-content: space-around;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+    // margin-bottom:$m-size;
+}
+flex-wrap: wrap;
 }
 .peoplePage-info-item{
-    width:15%
+    width:15%;
+    @media (max-width: $desktop-breakpoint) {
+        width:90%;
+        // margin-bottom:$m-size;
+    }
+}
+
+.peoplePage-title{
+    color:$dark-grey;
 }

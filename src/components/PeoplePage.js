@@ -14,7 +14,7 @@ import guo from '../images/peoplePhoto/guo.jpg';
 const PeoplePage = () => (
     <div className="page-header">
         <div className="content-container">
-
+            <h2 className="peoplePage-title">Current Group Member</h2>
             <PeopleExpansionPanel
                 img={yejb}
                 name="Ye, Jingbo"
@@ -25,30 +25,23 @@ const PeoplePage = () => (
             <PeopleExpansionPanel
                 img={gong}
                 name="Gong, Datao"
-                title="Professor of Experimental Physics"
-                mobile="(214)768-2114"
-                email="yejb@smu.edu"
+                title="Research Assistant Professor"
+                mobile="(214)768-1472"
+                email="dtgong@smu.edu"
             />
             <PeopleExpansionPanel
                 img={liu}
                 name="Liu, Tiankuan (Andy)"
-                title="Professor of Experimental Physics"
-                mobile="(214)768-2114"
-                email="yejb@smu.edu"
+                title="Research Associate Professor"
+                mobile="(214)768-1472"
+                email="liu@smu.edu"
             />
             <PeopleExpansionPanel
                 img={kentl}
                 name="Liu, Chonghan (Kent)"
-                title="Professor of Experimental Physics"
-                mobile="(214)768-2114"
-                email="yejb@smu.edu"
-            />
-            <PeopleExpansionPanel
-                img={axiang}
-                name="Xiang, Annie"
-                title="Professor of Experimental Physics"
-                mobile="(214)768-2114"
-                email="yejb@smu.edu"
+                title="Research Associate Professor"
+                mobile="(214)768-1472"
+                email="kentl@smu.edu"
             />
             <PeopleExpansionPanel
                 img={quans}
@@ -57,14 +50,23 @@ const PeoplePage = () => (
                 mobile="(469)450-6859"
                 email="quans@smu.edu"
             />
+            <h2 className="peoplePage-title">Previous Group Member</h2>
+
+            <PeopleExpansionPanel
+                img={axiang}
+                name="Xiang, Annie"
+                title="Research Associate Professor"
+                mobile="(214)768-1472"
+                email="cxiang@smu.edu"
+            />
+
             <PeopleExpansionPanel
                 img={guo}
                 name="Guo, Di"
-                title="Professor of Experimental Physics"
-                mobile="(214)768-2114"
-                email="yejb@smu.edu"
+                title="Postdoctoral Researcher"
+                mobile="(214)768-1472"
+                email="dig@smu.edu"
             />
-
         </div>
     </div>
 );
