@@ -40,6 +40,9 @@ span {  // no need for the leading dot .for this
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    @media (max-width: $desktop-breakpoint) {
+        flex-direction: column;
+    }
 }
 
 .dispaly-group-column{
@@ -47,6 +50,9 @@ span {  // no need for the leading dot .for this
     flex-direction: column;
     width:45%;
     margin:$s-size $m-size;
+    @media (max-width: $desktop-breakpoint) {
+        width:90%;
+    }
 }
 
 .contentpaper-newsitem{
