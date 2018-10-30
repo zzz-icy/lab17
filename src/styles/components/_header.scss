@@ -2,16 +2,14 @@
     // opacity:0.5;
     background:$dark-blue;
     font-family: 'Montserrat';
-    // height: 120px;
+    height: 120px;
     // width: 100%;
+    background-image: url(https://66.media.tumblr.com/55500877cbd95a29c411c7f4bc94476e/tumblr_n7osqjpBKu1r6v8t0o1_1280.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 120px;
 
-}
-
-.header-background{
-    background-image: url(/src/images/chip.jpg);
-
-}
-
+   }
 
 .header__content{
     display:flex;
@@ -28,6 +26,8 @@
     h1{  // target all the h1 element under title, dot is for classname
         margin:0;
         letter-spacing: 1.2px;
+        padding: $s-size;
+        background-color: rgba(102, 102, 102,0.7);
     }
 }
 
@@ -37,5 +37,10 @@
     // :visited{
     //     color: red;
     // }
+}
+
+.header-container-column{
+    display: flex;
+    flex-direction: row;
 }
 

@@ -9,8 +9,9 @@ import { Link } from 'react-router-dom';
 const styles = () => ({
   root: {
     flexGrow: 1,
-    backgroundColor: '#364051',
-    // opacity: 0.5
+    backgroundColor: 'rgb(86, 85, 85)',
+
+    opacity: 0.9
   },
   label: {
     fontSize: 12,

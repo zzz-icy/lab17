@@ -9,6 +9,7 @@ import Header from '../components/Header';
 import ContactPage from '../components/ContactPage'
 import NotFoundPage from '../components/NotFoundPage';
 import IndividualPage from '../components/IndividualPage';
+import SimpleTabs from '../components/SimpleTabs';
 
 const AppRouter = () => (
     // only expects child length of 1
@@ -16,6 +17,8 @@ const AppRouter = () => (
     <BrowserRouter>
         <div>
             <Header />
+            <SimpleTabs />
+
             <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/research" component={ResearchPage} />
