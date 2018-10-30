@@ -1,0 +1,19 @@
+.research-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $s-size;
+}
+
+.research-img{
+    height:100%;
+    width:100%;
+}
+.research-img-container{
+    width:35%
+}
+.research-description{
+    margin: $s-size $m-size;
+    width:60%;
+
+}
