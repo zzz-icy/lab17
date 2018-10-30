@@ -7,8 +7,7 @@ import PeoplePage from '../components/PeoplePage';
 import Header from '../components/Header';
 import ContactPage from '../components/ContactPage'
 import NotFoundPage from '../components/NotFoundPage';
-
-
+import IndividualPage from '../components/IndividualPage';
 
 const AppRouter = () => (
     // only expects child length of 1
@@ -21,6 +20,7 @@ const AppRouter = () => (
                 <Route path="/research" component={ResearchPage} />
                 <Route path="/facilities" component={FacilitiesPage} />
                 <Route path="/people" component={PeoplePage} />
+                <Route path="/people/:id" component={IndividualPage} />
                 <Route path="/contact" component={ContactPage} />
                 {/* /:id will dynamically match whater comes after the forward slash, id is gonna be in the props.match.params*/}
                 <Route component={NotFoundPage} /> {/* do not need path*/}

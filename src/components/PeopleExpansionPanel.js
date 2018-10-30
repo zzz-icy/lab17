@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -31,9 +32,9 @@ function PeopleExpansionPanel(props) {
                             src={props.img}
                             className="peoplePage-img"
                         />
-                        <p className="peoplePage-info-item">
+                        <Link to={`/people/${props.id}`} className="peoplePage-info-item">
                             {props.name}
-                        </p>
+                        </Link>
                         <p className="peoplePage-info-item">
                             {props.title}
                         </p>
@@ -50,7 +51,7 @@ function PeopleExpansionPanel(props) {
                     TBD
                 </ExpansionPanelDetails>
             </ExpansionPanel>
-        </div>
+        </div >
     );
 }
 

@@ -1,8 +1,17 @@
 .header {
+    // opacity:0.5;
     background:$dark-blue;
     font-family: 'Montserrat';
+    // height: 120px;
+    // width: 100%;
 
 }
+
+.header-background{
+    background-image: url(/src/images/chip.jpg);
+
+}
+
 
 .header__content{
     display:flex;
@@ -30,9 +39,3 @@
     // }
 }
 
-.header__subtitle{
-    :hover{
-        background: $dark-blue;
-        opacity:0.5;
-    }
-}

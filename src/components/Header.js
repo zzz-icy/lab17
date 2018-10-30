@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import SimpleTabs from '../components/SimpleTabs';
 
 // https://reacttraining.com/react-router/web/api/NavLink
 
 const Header = () => (
-  <header className="header">
+  <header className="header header-background">
     <div className="content-container">
       <div className="header__content">
         <Link className="header__title" to="/">
@@ -13,7 +13,9 @@ const Header = () => (
         </Link>
       </div>
     </div>
-    <div className="header__content">
+    <SimpleTabs />
+
+    {/*<div className="header__content">
       <div className="header__subtitle">
         <Link
           exact="true"
@@ -53,7 +55,7 @@ const Header = () => (
           People
         </Link>
       </div>
-    </div>
+</div>*/}
   </header>
 );
 

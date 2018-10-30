@@ -16,6 +16,7 @@ const PeoplePage = () => (
         <div className="content-container">
             <h2 className="peoplePage-title">Current Group Member</h2>
             <PeopleExpansionPanel
+                id={1}
                 img={yejb}
                 name="Ye, Jingbo"
                 title="Professor of Experimental Physics"
@@ -23,6 +24,7 @@ const PeoplePage = () => (
                 email="yejb@smu.edu"
             />
             <PeopleExpansionPanel
+                id={2}
                 img={gong}
                 name="Gong, Datao"
                 title="Research Assistant Professor"
@@ -30,6 +32,7 @@ const PeoplePage = () => (
                 email="dtgong@smu.edu"
             />
             <PeopleExpansionPanel
+                id={3}
                 img={liu}
                 name="Liu, Tiankuan (Andy)"
                 title="Research Associate Professor"
@@ -37,6 +40,7 @@ const PeoplePage = () => (
                 email="liu@smu.edu"
             />
             <PeopleExpansionPanel
+                id={4}
                 img={kentl}
                 name="Liu, Chonghan (Kent)"
                 title="Research Associate Professor"
@@ -44,6 +48,7 @@ const PeoplePage = () => (
                 email="kentl@smu.edu"
             />
             <PeopleExpansionPanel
+                id={5}
                 img={quans}
                 name="Sun, Quan"
                 title="Senior Research Associate"
