@@ -1,11 +1,13 @@
 import React from 'react';
 // import AppRouter from '../AppRouter';
 
-const FacilitiesPage = () => (
-    <div>
-        FacilitiesPage
+const FacilitisePage = () => (
+    <div className="page-header">
+        <div className="content-container">
+            FacilitisePage
+        </div>
     </div>
 );
 
 
-export default FacilitiesPage;
+export default FacilitisePage;

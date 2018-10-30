@@ -53,6 +53,12 @@ class IndividualPage extends React.Component {
                                 disabled={this.state.disabled}
                                 placeholder='your introduction goes here...'
                             />
+                            <h4>Publication</h4>
+                            <EditableField
+                                open={this.state.open}
+                                disabled={this.state.disabled}
+                                placeholder='your publication goes here...'
+                            />
 
                         </div>
                         {

@@ -67,7 +67,7 @@ class SimpleTabs extends React.Component {
                 label: classes.label
               }}
               component={Link}
-              to='/'
+              to='/publication'
               label='Publications'
             />
 

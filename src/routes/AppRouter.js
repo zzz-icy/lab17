@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from '../components/HomePage';
 import ResearchPage from '../components/ResearchPage';
+import PublicationPage from '../components/PublicationPage';
 import FacilitiesPage from '../components/FacilitiesPage';
 import PeoplePage from '../components/PeoplePage';
 import Header from '../components/Header';
@@ -18,6 +19,7 @@ const AppRouter = () => (
             <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/research" component={ResearchPage} />
+                <Route path="/publication" component={PublicationPage} />
                 <Route path="/facilities" component={FacilitiesPage} />
                 <Route exact path="/people" component={PeoplePage} />
                 <Route path="/people/:id" component={IndividualPage} />

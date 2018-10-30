@@ -1,13 +1,13 @@
 import React from 'react';
 // import AppRouter from '../AppRouter';
 
-const ResearchPage = () => (
+const PublicationPage = () => (
     <div className="page-header">
         <div className="content-container">
-            ResearchPage
+            PublicationPage
         </div>
     </div>
 );
 
 
-export default ResearchPage;
+export default PublicationPage;
