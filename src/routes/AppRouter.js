@@ -19,7 +19,7 @@ const AppRouter = () => (
                 <Route exact path="/" component={HomePage} />
                 <Route path="/research" component={ResearchPage} />
                 <Route path="/facilities" component={FacilitiesPage} />
-                <Route path="/people" component={PeoplePage} />
+                <Route exact path="/people" component={PeoplePage} />
                 <Route path="/people/:id" component={IndividualPage} />
                 <Route path="/contact" component={ContactPage} />
                 {/* /:id will dynamically match whater comes after the forward slash, id is gonna be in the props.match.params*/}

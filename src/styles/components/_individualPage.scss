@@ -1,0 +1,47 @@
+.individual-container-row{
+    display:flex;
+    flex-direction: row;
+}
+
+.individual-container-colomn{
+    display:flex;
+    flex-direction: column;
+    width:70%;
+}
+
+.largePadding{
+    padding: 0 $xl-size;
+
+}
+
+.individual-img{
+    height:120px;
+    width:auto;
+    max-width: 200px;
+    margin: $s-size 0;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // align-self: center;
+}
+
+.accessInput{
+    margin: $s-size;
+}
+
+.confirmBtn{
+    margin: $s-size;
+    width: 40%;
+    align-self: center;
+}
+
+.editable-p{
+    background: darken($off-white,3%);
+    padding: 0 $m-size;
+}
+.editable-textarea{
+    padding: 0 $s-size;
+    width:80%
+}
+
+.editable-box{
+    padding: 0 $s-size;
+}

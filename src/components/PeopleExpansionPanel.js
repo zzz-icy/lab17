@@ -28,6 +28,7 @@ function PeopleExpansionPanel(props) {
                         className="peoplePage-img"
                     />
                     <Link to={`/people/${props.id}`} className="peoplePage-info-item">
+
                         {props.name}
                     </Link>
                     <p className="peoplePage-info-item long-item">

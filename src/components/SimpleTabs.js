@@ -62,6 +62,14 @@ class SimpleTabs extends React.Component {
               to='/research'
               label='Research'
             />
+            <Tab
+              classes={{
+                label: classes.label
+              }}
+              component={Link}
+              to='/'
+              label='Publications'
+            />
 
             <Tab
               classes={{
