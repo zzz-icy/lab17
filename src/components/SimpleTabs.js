@@ -48,7 +48,7 @@ class SimpleTabs extends React.Component {
               classes={{
                 label: classes.label
               }}
-              exact
+              exact="true"
               component={Link}
               to='/'
               label='Home'

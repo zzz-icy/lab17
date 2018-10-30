@@ -2,6 +2,9 @@
     height:100px;
     width:auto;
     max-width: 90px;
+    margin: $s-size 0;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: center;
     // display:block;
 }
 
@@ -20,10 +23,15 @@ flex-wrap: wrap;
 .peoplePage-info-item{
     width:15%;
     margin: 13px 0;
+    align-self: center;
     @media (max-width: $desktop-breakpoint) {
         width:90%;
         // margin-bottom:$m-size;
     }
+}
+.long-item{
+    width:20%;
+
 }
 
 .peoplePage-title{

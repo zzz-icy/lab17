@@ -5,6 +5,7 @@ class IndividualPage extends React.Component {
         return (
 
             <div>
+                hhshshsh
             </div>
         );
 
