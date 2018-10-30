@@ -4,7 +4,7 @@ import React from 'react';
 const FacilitisePage = () => (
     <div className="page-header">
         <div className="content-container">
-            FacilitisePage
+            gggg
         </div>
     </div>
 );

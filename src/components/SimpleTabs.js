@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const styles = () => ({
   root: {
     flexGrow: 1,
-    backgroundColor: 'rgb(86, 85, 85)',
+    backgroundColor: 'rgb(2,24,35)',
 
     opacity: 0.9
   },
@@ -74,14 +74,7 @@ class SimpleTabs extends React.Component {
               label='Publications'
             />
 
-            <Tab
-              classes={{
-                label: classes.label
-              }}
-              component={Link}
-              to='/facilities'
-              label='Facilities'
-            />
+
             <Tab
               classes={{
                 label: classes.label
@@ -89,6 +82,14 @@ class SimpleTabs extends React.Component {
               component={Link}
               to='/people'
               label='People'
+            />
+            <Tab
+              classes={{
+                label: classes.label
+              }}
+              component={Link}
+              to='/activities'
+              label='Activities'
             />
           </Tabs>
 

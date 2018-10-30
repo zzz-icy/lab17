@@ -55,6 +55,16 @@ const PeoplePage = () => (
                 mobile="(469)450-6859"
                 email="quans@smu.edu"
             />
+            <h2 className="peoplePage-title">Current Visiting Scholars</h2>
+
+            <PeopleExpansionPanel
+                img={axiang}
+                name="Xiang, Annie"
+                title="Research Associate Professor"
+                mobile="(214)768-1472"
+                email="cxiang@smu.edu"
+            />
+
             <h2 className="peoplePage-title">Previous Group Member</h2>
 
             <PeopleExpansionPanel
