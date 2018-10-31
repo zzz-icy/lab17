@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
     card: {
-        width: "80%",
+        width: "100%",
         marginTop: 16,
         // marginBottom: 16,
         marginRight: 'auto',
