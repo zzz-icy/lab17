@@ -17,3 +17,14 @@
     width:60%;
 
 }
+
+.sponsor-group{
+    padding:$m-size;
+    display:flex;
+    flex-direction: row;
+}
+.sponsor-img{
+    width:150px;
+    margin:$m-size;
+    align-self: center;
+}
