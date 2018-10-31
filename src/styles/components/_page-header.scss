@@ -66,3 +66,12 @@ span {  // no need for the leading dot .for this
     margin-top:10;
 }
 
+.address-group{
+    display:flex;
+    flex-direction: row;
+
+}
+.address-group-p{
+    padding:0;
+
+}

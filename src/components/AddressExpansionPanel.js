@@ -5,6 +5,8 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Phone from '@material-ui/icons/Phone';
+
 
 const styles = () => ({
     root: {
@@ -14,6 +16,9 @@ const styles = () => ({
     heading: {
         fontSize: 15,
         // fontWeight: theme.typography.fontWeightRegular,
+    },
+    icon: {
+        fontSize: 18,
     },
 });
 
@@ -50,10 +55,12 @@ function AddressExpansionPanel(props) {
                         <p className=''>
                             Dallas, Texas 75275-0175
                     </p>
-
-                        <p className=''>
-                            (214) 768-1472 Phone
-                    </p>
+                        <div className="address-group">
+                            <Phone className={classes.icon} />
+                            <p>
+                                (214) 768-1472
+                            </p>
+                        </div>
 
                         <p className=''>
                             (214) 768-1472 Fax
