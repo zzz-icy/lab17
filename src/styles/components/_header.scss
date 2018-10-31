@@ -27,6 +27,8 @@ background-image:url(https://cdn.defenseone.com/media/img/upload/2017/09/17/We_A
     text-decoration: none;
     // text-shadow: horizontal-offset vertical-offset blur color;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    display:flex;
+    flex-direction: row;
     h1{  // target all the h1 element under title, dot is for classname
         margin:0;
         letter-spacing: 1.2px;
@@ -34,6 +36,10 @@ background-image:url(https://cdn.defenseone.com/media/img/upload/2017/09/17/We_A
         background-color: rgba(2,24,35,0.4);
         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+    };
+    img{
+    align-self: center;
+        height:40px;
     }
 }
 
