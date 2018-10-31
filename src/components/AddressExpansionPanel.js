@@ -3,22 +3,19 @@ import { withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Phone from '@material-ui/icons/Phone';
-
+import Scanner from '@material-ui/icons/Scanner';
+import SMUlogo from '../images/SMUlogo.png';
 
 const styles = () => ({
     root: {
         marginTop: '20px',
         width: '100%',
     },
-    heading: {
-        fontSize: 15,
-        // fontWeight: theme.typography.fontWeightRegular,
-    },
     icon: {
         fontSize: 18,
+        marginRight: 10
     },
 });
 
@@ -28,44 +25,70 @@ function AddressExpansionPanel(props) {
         <div className={classes.root}>
             <ExpansionPanel defaultExpanded>
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography className={classes.heading}>Contact Us</Typography>
+                    <p className="panelsummary-p">Contact Us</p>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <div className="panel-details-group">
-                        <p className=''>
-                            Advanced Center for Electronics
-                    </p>
+                        <div className="address-group">
 
-                        <p className=''>
-                            Department of Physics
+                            <p>
+                                Advanced Center for Electronics
                     </p>
+                        </div>
 
-                        <p className=''>
-                            Dedman College of Humanities and Sciences
-                    </p>
+                        <div className="address-group">
 
-                        <p className=''>
-                            Southern Methodist University
+                            <p>
+                                Department of Physics
                     </p>
+                        </div>
 
-                        <p className=''>
-                            3215 Daniel Ave.
-                    </p>
+                        <div className="address-group">
 
-                        <p className=''>
-                            Dallas, Texas 75275-0175
+                            <p>
+                                Dedman College of Humanities and Sciences
                     </p>
+                        </div>
+
+                        <div className="address-group">
+
+                            <p>
+
+                                Southern Methodist University
+                    </p>
+                        </div>
+
+                        <div className="address-group">
+
+                            <p>
+
+                                3215 Daniel Ave.
+                    </p>
+                        </div>
+
+                        <div className="address-group">
+
+                            <p>
+                                Dallas, Texas 75275-0175
+                    </p>
+                        </div>
+
                         <div className="address-group">
                             <Phone className={classes.icon} />
                             <p>
                                 (214) 768-1472
                             </p>
                         </div>
-
-                        <p className=''>
-                            (214) 768-1472 Fax
+                        <div className="address-group">
+                            <Scanner className={classes.icon} />
+                            <p>
+                                (214) 768-1472 Fax
                     </p>
+                        </div>
+                        <img alt="smulogo" src={SMUlogo} className="smulogo" />
+
                     </div>
+
                 </ExpansionPanelDetails>
             </ExpansionPanel>
         </div>

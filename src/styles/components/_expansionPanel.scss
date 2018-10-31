@@ -1,15 +1,24 @@
 .panel-details-group{
     display:flex;
     flex-direction: column;
+    width:95%;
     p{
         margin: 0;
-        padding: $s-size 0 0 0;
+        padding: 0;
 
     }
 }
 
-// .panel-details-item{
-// margin: 0;
-// padding: $s-size 0;
-// }
+.address-group{
+    display:flex;
+    flex-direction: row;
+padding: 10px 0 0 0;
+
+}
+.smulogo{
+    margin:$s-size 0;
+    height:30px;
+    width:auto;
+    align-self: flex-end;
+}
 

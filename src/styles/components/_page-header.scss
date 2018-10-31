@@ -32,7 +32,7 @@ span {  // no need for the leading dot .for this
 .dispaly-group-row{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     @media (max-width: $desktop-breakpoint) {
         flex-direction: column;
     }
@@ -41,8 +41,8 @@ span {  // no need for the leading dot .for this
 .dispaly-group-column{
     display:flex;
     flex-direction: column;
-    width:45%;
-    margin:$s-size $m-size;
+    width:48%;
+    margin:$s-size 0;
     @media (max-width: $desktop-breakpoint) {
         width:90%;
     }
@@ -59,12 +59,5 @@ span {  // no need for the leading dot .for this
     margin-top:10;
 }
 
-.address-group{
-    display:flex;
-    flex-direction: row;
 
-}
-// .address-group-p{
-//     padding:0;
 
-// }
