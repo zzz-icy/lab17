@@ -14,7 +14,8 @@ import guo from '../images/peoplePhoto/guo.jpg';
 const PeoplePage = () => (
     <div className="page-header">
         <div className="content-container">
-            <h2 className="peoplePage-title">Current Group Member</h2>
+            <h3 className="peoplePage-title">Current Group Member</h3>
+
             <PeopleExpansionPanel
                 id={1}
                 img={yejb}
@@ -55,7 +56,7 @@ const PeoplePage = () => (
                 mobile="(469)450-6859"
                 email="quans@smu.edu"
             />
-            <h2 className="peoplePage-title">Current Visiting Scholars</h2>
+            <h3 className="peoplePage-title">Current Visiting Scholars</h3>
 
             <PeopleExpansionPanel
                 img={axiang}
@@ -65,7 +66,7 @@ const PeoplePage = () => (
                 email="cxiang@smu.edu"
             />
 
-            <h2 className="peoplePage-title">Previous Group Member</h2>
+            <h3 className="peoplePage-title">Previous Group Member</h3>
 
             <PeopleExpansionPanel
                 img={axiang}

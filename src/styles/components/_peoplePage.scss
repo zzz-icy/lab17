@@ -35,5 +35,12 @@ flex-wrap: wrap;
 }
 
 .peoplePage-title{
-    color:$dark-grey;
+    font-family:Linotype, Arial, sans-serif;
+    padding:8px;
+    color:darken(rgb(152, 187, 205),50%);
+    background-image: linear-gradient(to right, rgba(152, 187, 205,0.8) , transparent);
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    border-radius: 4px;
+
 }
+
