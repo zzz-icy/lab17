@@ -4,7 +4,7 @@ import './styles/styles.scss';
 import './index.css';
 import AppRouter from './routes/AppRouter';
 // import Header from './components/Header';
-
+import './firebase/firebase';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<AppRouter />, document.getElementById('root'));
