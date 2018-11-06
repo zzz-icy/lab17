@@ -12,8 +12,12 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-firebase.database().ref().set({
-    name: "hannah"
-});
+
+
+// firebase.database().ref().set({
+//     name: "hannah",
+//     age: 29,
+//     isSingle: false
+// });
 
 export { firebase, database as default };

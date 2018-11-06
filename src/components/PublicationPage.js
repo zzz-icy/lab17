@@ -1,20 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { startSetPublications } from '../actions/publications';
 
 class PublicationPage extends React.Component {
+    componentDidMount() {
+        // this.props.publications initial value is []
+        if (!!this.props.publications) {
+
+            this.props.startSetPublications();
+        }
+    }
 
     state = {
-        publicationArray1: [
-            {
-                key: 1,
-                content:
-                    'Goel, M., Saba, E., Stiber, M., Whitmire, E., Fromm, J., Larson, E. C., Borriello, G., & Patel, S. N. (2016). SpiroCall: Measuring Lung Function over a Phone Call.. Paper presented at the CHI.'
-            }, {
-                key: 2,
-                content:
-                    'Larson, E. C., Saba, E., Kaiser, S., Goel, M., & Patel, S. N. (2016). Pulmonary Monitoring Using Smartphones (Vol. 1) editors James M. Rehg, Susan A. Murphy, & Santosh Kumar.'
-            }
-
-        ],
         editting: false,
         inputText: ''
     }
@@ -22,12 +19,12 @@ class PublicationPage extends React.Component {
         this.setState(() => ({ editting: true }))
     }
     handleSaveItem = () => {
-        const length = this.state.publicationArray1.length;
+        // const length = this.state.publicationArray1.length;
         this.setState(() => ({ editting: false }));
-        this.state.publicationArray1.unshift({
-            key: length + 1,
-            content: this.state.inputText,
-        });
+        // this.state.publicationArray1.unshift({
+        //     key: length + 1,
+        //     content: this.state.inputText,
+        // });
     }
     onTextChange = (e) => {
         this.setState({
@@ -35,8 +32,10 @@ class PublicationPage extends React.Component {
         });
     }
     render() {
-        const pubArr1 = this.state.publicationArray1;
-        // console.log(pubArr1);
+        const publications = this.props.publications;
+        if (!publications) return (<p>No data</p>);
+        console.log(publications);
+
         return (
             <div className="page-header">
                 <div className="content-container">
@@ -67,8 +66,8 @@ class PublicationPage extends React.Component {
                     <div className="publication-container">
                         <ol>
                             {
-                                pubArr1.map((item) => (
-                                    <li key={item.key} className="publication-list-item">{item.content}</li>
+                                publications.map((item) => (
+                                    <li key={item.id} className="publication-list-item">{item.content}</li>
                                 ))
                             }
                         </ol>
@@ -77,8 +76,8 @@ class PublicationPage extends React.Component {
                     <div className="publication-container">
                         <ol>
                             {
-                                pubArr1.map((item) => (
-                                    <li key={item.key} className="publication-list-item">{item.content}</li>
+                                publications.map((item) => (
+                                    <li key={item.id} className="publication-list-item">{item.content}</li>
                                 ))
                             }
                         </ol>
@@ -90,7 +89,23 @@ class PublicationPage extends React.Component {
 
 }
 
+const mapStateToProps = (state) => {
+    console.log(state);
+    return ({
+        // use selector here
+        // we always want the filtered result to present
+        publications: state.publications,  // have access to it as props
+        // filters: state.filters,
+    });
+};
+const mapDispatchToProps = (dispatch) => ({
+    // addExpense: (expense) => (dispatch(addExpense(expense))),
+    startSetPublications: () => (dispatch(startSetPublications())),
 
-
-
-export default PublicationPage;
+});
+export default connect(
+    // provide information about what we want connect
+    // like we might only need a subset of the huge amount of states in store
+    mapStateToProps,
+    mapDispatchToProps
+)(PublicationPage);
