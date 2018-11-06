@@ -65,7 +65,7 @@ class PublicationPage extends React.Component {
                     <div className="publication-container">
                         <ol>
                             {
-                                publications.map((item) => (
+                                publications.slice(0).reverse().map((item) => (
                                     <li key={item.id} className="publication-list-item">{item.content}</li>
                                 ))
                             }
@@ -75,7 +75,7 @@ class PublicationPage extends React.Component {
                     <div className="publication-container">
                         <ol>
                             {
-                                publications.map((item) => (
+                                publications.slice(0).reverse().map((item) => (
                                     <li key={item.id} className="publication-list-item">{item.content}</li>
                                 ))
                             }
