@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { startSetPublications } from '../actions/publications';
+import { startSetPublications, startAddPublication } from '../actions/publications';
 
 class PublicationPage extends React.Component {
     componentDidMount() {
@@ -21,10 +21,11 @@ class PublicationPage extends React.Component {
     handleSaveItem = () => {
         // const length = this.state.publicationArray1.length;
         this.setState(() => ({ editting: false }));
-        // this.state.publicationArray1.unshift({
-        //     key: length + 1,
-        //     content: this.state.inputText,
-        // });
+        this.props.startAddPublication(this.state.inputText);
+        this.props.startSetPublications();
+        this.setState({
+            inputText: ''
+        });
     }
     onTextChange = (e) => {
         this.setState({
@@ -34,8 +35,6 @@ class PublicationPage extends React.Component {
     render() {
         const publications = this.props.publications;
         if (!publications) return (<p>No data</p>);
-        console.log(publications);
-
         return (
             <div className="page-header">
                 <div className="content-container">
@@ -90,7 +89,7 @@ class PublicationPage extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state);
+    // console.log(state);
     return ({
         // use selector here
         // we always want the filtered result to present
@@ -101,6 +100,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => ({
     // addExpense: (expense) => (dispatch(addExpense(expense))),
     startSetPublications: () => (dispatch(startSetPublications())),
+    startAddPublication: (data) => (dispatch(startAddPublication(data)))
 
 });
 export default connect(

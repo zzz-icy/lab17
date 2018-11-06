@@ -1,5 +1,25 @@
 import database from '../firebase/firebase';
+export const addPublication = (publication) => (
+    {
+        type: 'ADD_PUBLICATION',
+        publication
+    });
 
+
+export const startAddPublication = (publication) => {
+    return (dispatch, getState) => {
+
+        // add return so that we can chain .then() in the test
+        return database.ref('publications').push(publication).then((ref) => { //.then() gets called with the ref, so we have access to the id 
+            dispatch(addPublication(
+                {
+                    id: ref.key,
+                    content: publication
+                }
+            ));
+        });
+    }
+};
 
 // SET_EXPENSES
 export const setPublications = (publications) => ({
