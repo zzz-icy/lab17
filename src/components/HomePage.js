@@ -26,13 +26,18 @@ const HomePage = () => (
 
                         <ContentPaper>
                             <p className="contentpaper-newsitem">
-                                This website is using ReactJS and MaterialUI.
+                                You can add publication on the Publications page, a link for a publication is optional
                             </p>
                         </ContentPaper>
                         <ContentPaper>
                             <p className="contentpaper-newsitem">
                                 The official website is leasing soon! --10/31/2018
                             </p>
+                        </ContentPaper>
+                        <ContentPaper>
+                            <p className="contentpaper-newsitem">
+                                This website is using ReactJS and MaterialUI.
+                        </p>
                         </ContentPaper>
                         <NewsCard img={chip} />
                         <NewsCard img={cms} />

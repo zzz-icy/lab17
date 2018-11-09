@@ -57,6 +57,7 @@ class PublicationPage extends React.Component {
                         &&
                         (
                             <div className='edit-group'>
+                                <p>Content:</p>
                                 <textarea
                                     rows="2"
                                     cols="30"
@@ -64,6 +65,8 @@ class PublicationPage extends React.Component {
                                     onChange={this.onTextChange}
                                     className='publication-textarea'
                                 />
+                                <p>Link(optional):</p>
+
                                 <textarea
                                     rows="1"
                                     cols="30"
