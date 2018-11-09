@@ -26,7 +26,8 @@ const HomePage = () => (
 
                         <ContentPaper>
                             <p className="contentpaper-newsitem">
-                                You can add publication on the Publications page, a link for a publication is optional
+                                Check out the Publication page! You can now add publication, a link for a publication is optional!
+                                --11/09/2018
                             </p>
                         </ContentPaper>
                         <ContentPaper>
