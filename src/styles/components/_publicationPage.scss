@@ -12,9 +12,11 @@
 }
 .publication-saveButton{
     margin:$s-size;
+    width:10%,
+
 }
 .edit-group{
     display:flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center
 }

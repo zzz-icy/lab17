@@ -13,7 +13,8 @@ class PublicationPage extends React.Component {
 
     state = {
         editting: false,
-        inputText: ''
+        inputText: '',
+        link: ''
     }
     handleAddItem = () => {
         this.setState(() => ({ editting: true }))
@@ -21,15 +22,26 @@ class PublicationPage extends React.Component {
     handleSaveItem = () => {
         // const length = this.state.publicationArray1.length;
         this.setState(() => ({ editting: false }));
-        this.props.startAddPublication(this.state.inputText);
-        this.props.startSetPublications();
+        if (this.state.inputText !== '') {
+            this.props.startAddPublication({
+                content: this.state.inputText,
+                link: this.state.link
+            });
+            this.props.startSetPublications();
+        }
         this.setState({
-            inputText: ''
+            inputText: '',
+            link: ''
         });
     }
     onTextChange = (e) => {
         this.setState({
             inputText: e.target.value
+        });
+    }
+    onLinkChange = (e) => {
+        this.setState({
+            link: e.target.value
         });
     }
     render() {
@@ -38,8 +50,8 @@ class PublicationPage extends React.Component {
         return (
             <div className="page-header">
                 <div className="content-container">
-                    <h2>U.S. & International Patents</h2>
-                    <button onClick={this.handleAddItem}>Add item</button>
+                    <h2>Publications</h2>
+                    {!this.state.editting && <button onClick={this.handleAddItem}>Add item</button>}
                     {
                         this.state.editting
                         &&
@@ -50,6 +62,13 @@ class PublicationPage extends React.Component {
                                     cols="30"
                                     value={this.state.inputText}
                                     onChange={this.onTextChange}
+                                    className='publication-textarea'
+                                />
+                                <textarea
+                                    rows="1"
+                                    cols="30"
+                                    value={this.state.link}
+                                    onChange={this.onLinkChange}
                                     className='publication-textarea'
                                 />
                                 <button
@@ -66,17 +85,37 @@ class PublicationPage extends React.Component {
                         <ol>
                             {
                                 publications.slice(0).reverse().map((item) => (
-                                    <li key={item.id} className="publication-list-item">{item.content}</li>
+
+                                    item.link === '' ?
+                                        <li key={item.id} className="publication-list-item">{item.content}</li>
+                                        :
+                                        <a
+                                            key={item.id}
+                                            alt={item.id}
+                                            href={item.link}
+                                        >
+                                            <li key={item.id} className="publication-list-item">{item.content}</li>
+                                        </a>
                                 ))
                             }
                         </ol>
                     </div>
-                    <h2>Publications</h2>
+                    <h2>U.S. & International Patents</h2>
                     <div className="publication-container">
                         <ol>
                             {
                                 publications.slice(0).reverse().map((item) => (
-                                    <li key={item.id} className="publication-list-item">{item.content}</li>
+
+                                    item.link === '' ?
+                                        <li key={item.id} className="publication-list-item">{item.content}</li>
+                                        :
+                                        <a
+                                            key={item.id}
+                                            alt={item.id}
+                                            href={item.link}
+                                        >
+                                            <li key={item.id} className="publication-list-item">{item.content}</li>
+                                        </a>
                                 ))
                             }
                         </ol>
@@ -97,6 +136,7 @@ const mapStateToProps = (state) => {
         // filters: state.filters,
     });
 };
+
 const mapDispatchToProps = (dispatch) => ({
     // addExpense: (expense) => (dispatch(addExpense(expense))),
     startSetPublications: () => (dispatch(startSetPublications())),

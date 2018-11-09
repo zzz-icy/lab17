@@ -1,14 +1,14 @@
 import React from 'react';
 
 class EditableField extends React.Component {
-    state = {
-        text: this.props.placeholder,
-    };
-    onTextChange = (e) => {
-        this.setState({
-            text: e.target.value
-        });
-    }
+    // state = {
+    //     text: this.props.placeholder,
+    // };
+    // onTextChange = (e) => {
+    //     this.setState({
+    //         text: e.target.value
+    //     });
+    // }
 
     render() {
         return (
@@ -18,16 +18,17 @@ class EditableField extends React.Component {
                     <p
                         className="editable-p"
                     >
-                        {this.state.text}
+                        {this.props.placeholder}
                     </p>}
                 {!this.props.disabled &&
                     <textarea
                         rows="2"
                         cols="30"
                         // className="summary__input"
-                        value={this.state.text}
-                        onChange={this.onTextChange}
+                        // defaultValue={this.state.text}
+                        onChange={this.props.onTextChange}
                         className='editable-textarea'
+                        defaultValue={this.props.placeholder}
                     />
                 }
             </div>

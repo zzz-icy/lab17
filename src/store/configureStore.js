@@ -1,6 +1,7 @@
 // store creation
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import publicationsReducer from '../reducers/publications';
+import peopleReducer from '../reducers/people';
 import thunk from 'redux-thunk';
 
 // will do the following in the app.js
@@ -13,6 +14,7 @@ export default () => {
         // register each reducer here
         combineReducers({
             publications: publicationsReducer,
+            people: peopleReducer,
         }),
         composeEnhancers(applyMiddleware(thunk))
         // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

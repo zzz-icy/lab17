@@ -14,7 +14,8 @@ export const startAddPublication = (publication) => {
             dispatch(addPublication(
                 {
                     id: ref.key,
-                    content: publication
+                    content: publication.content,
+                    link: publication.link
                 }
             ));
         });
@@ -39,7 +40,8 @@ export const startSetPublications = () => {
             snapshot.forEach((childSnapshot) => {
                 publications.push({
                     id: childSnapshot.key,
-                    content: childSnapshot.val()
+                    content: childSnapshot.val().content,
+                    link: childSnapshot.val().link,
                 })
             });
             dispatch(setPublications(publications));
