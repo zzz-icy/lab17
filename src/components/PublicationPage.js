@@ -95,7 +95,7 @@ class PublicationPage extends React.Component {
                                         <a
                                             key={item.id}
                                             alt={item.id}
-                                            href={item.link}
+                                            href={`//${item.link}`}
                                         >
                                             <li key={item.id} className="publication-list-item">{item.content}</li>
                                         </a>
@@ -115,7 +115,7 @@ class PublicationPage extends React.Component {
                                         <a
                                             key={item.id}
                                             alt={item.id}
-                                            href={item.link}
+                                            href={`//${item.link}`}
                                         >
                                             <li key={item.id} className="publication-list-item">{item.content}</li>
                                         </a>
